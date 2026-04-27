@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+<title>Hubungi Kami - Suruhboy</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<style>
+.info-page { display: block; min-height: 100vh; background: #F5F6FA; }
+.info-container { max-width: 500px; margin: 0 auto; padding: 0 16px 40px; }
+.info-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-top: 12px; }
+.info-back-btn { width: 40px; height: 40px; border-radius: 12px; border: 1px solid #E2E6ED; display: flex; align-items: center; justify-content: center; background: #fff; cursor: pointer; text-decoration: none; }
+.info-content { background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.contact-list { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.contact-item { display: flex; align-items: center; gap: 14px; padding: 12px; background: #F5F7FB; border-radius: 16px; cursor: pointer; transition: all 0.2s; }
+.contact-item:hover { background: #F0F2F5; transform: translateX(4px); }
+.contact-item i { width: 36px; height: 36px; background: linear-gradient(135deg, #E88D2A, #F5A623); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; }
+.contact-info h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+.contact-info p { font-size: 12px; color: #E88D2A; margin: 0; }
+</style>
+</head>
+<body>
+<div class="info-page">
+  <div class="info-container">
+    <div class="info-header">
+      <a href="../index.html" class="info-back-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </a>
+      <div><h2 style="font-size:18px; font-weight:700;">Hubungi Kami</h2></div>
+    </div>
+    <div class="info-content">
+      <h2>Hubungi Suruhboy</h2>
+      <div class="contact-list">
+        <div class="contact-item" onclick="window.open('https://wa.me/62882007670299?text=Halo%20Suruhboy', '_blank')">
+          <i class="fab fa-whatsapp"></i>
+          <div><h4>WhatsApp</h4><p>+62 882-0076-70299</p></div>
+        </div>
+        <div class="contact-item" onclick="window.location.href='mailto:suruhboy.id@gmail.com'">
+          <i class="fas fa-envelope"></i>
+          <div><h4>Email</h4><p>suruhboy.id@gmail.com</p></div>
+        </div>
+        <div class="contact-item" onclick="window.open('https://instagram.com/suruhboy.id', '_blank')">
+          <i class="fab fa-instagram"></i>
+          <div><h4>Instagram</h4><p>@suruhboy.id</p></div>
+        </div>
+        <div class="contact-item" onclick="window.open('https://tiktok.com/@jasasuruhboyolali', '_blank')">
+          <i class="fab fa-tiktok"></i>
+          <div><h4>TikTok</h4><p>@jasasuruhboyolali</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
