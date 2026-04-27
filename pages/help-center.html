@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+<title>Pusat Bantuan - Suruhboy</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<style>
+.info-page { display: block; min-height: 100vh; background: #F5F6FA; }
+.info-container { max-width: 500px; margin: 0 auto; padding: 0 16px 40px; }
+.info-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-top: 12px; }
+.info-back-btn { width: 40px; height: 40px; border-radius: 12px; border: 1px solid #E2E6ED; display: flex; align-items: center; justify-content: center; background: #fff; cursor: pointer; text-decoration: none; }
+.info-content { background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.faq-item { margin-bottom: 16px; border-bottom: 1px solid #EEF2F6; }
+.faq-question { font-size: 14px; font-weight: 700; color: #1B2A4A; padding: 12px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.faq-question i { color: #E88D2A; transition: transform 0.2s; }
+.faq-question.active i { transform: rotate(180deg); }
+.faq-answer { font-size: 13px; color: #7A8BA0; line-height: 1.5; padding: 0 0 12px 0; display: none; }
+.faq-answer.show { display: block; }
+</style>
+</head>
+<body>
+<div class="info-page">
+  <div class="info-container">
+    <div class="info-header">
+      <a href="../index.html" class="info-back-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </a>
+      <div>
+        <h2 style="font-size:18px; font-weight:700;">Pusat Bantuan</h2>
+        <p style="font-size:12px; color:#7A8BA0;">Pertanyaan yang sering diajukan</p>
+      </div>
+    </div>
+    <div class="info-content">
+      <h2 style="margin-bottom:20px;">FAQ - Pertanyaan Umum</h2>
+      <div class="faq-item"><div class="faq-question">Bagaimana cara memesan layanan?<i class="fas fa-chevron-down"></i></div><div class="faq-answer">Anda bisa langsung memilih layanan yang diinginkan dari halaman utama, isi form pemesanan, lalu klik "Pesan via WhatsApp". Admin akan segera memproses pesanan Anda.</div></div>
+      <div class="faq-item"><div class="faq-question">Berapa lama estimasi waktu pengiriman?<i class="fas fa-chevron-down"></i></div><div class="faq-answer">Estimasi waktu tergantung jarak dan jenis layanan. Umumnya 15-30 menit untuk area sekitar, dan 1-2 jam untuk area luar kota.</div></div>
+      <div class="faq-item"><div class="faq-question">Apakah ada garansi jika barang rusak?<i class="fas fa-chevron-down"></i></div><div class="faq-answer">Ya, kami memberikan garansi hingga 100% jika barang rusak karena kelalaian agent. Pastikan Anda melaporkan segera setelah barang diterima.</div></div>
+      <div class="faq-item"><div class="faq-question">Bagaimana cara menjadi agent Suruhboy?<i class="fas fa-chevron-down"></i></div><div class="faq-answer">Klik tombol "Daftar Agent" di halaman utama, isi formulir pendaftaran, lalu tim kami akan menghubungi Anda untuk proses selanjutnya.</div></div>
+      <div class="faq-item"><div class="faq-question">Apakah bisa pesan untuk orang lain?<i class="fas fa-chevron-down"></i></div><div class="faq-answer">Tentu bisa. Cukup masukkan nama dan nomor WhatsApp penerima di form pemesanan, dan tulis keterangan "untuk orang lain" di detail pesanan.</div></div>
+      <div class="faq-item"><div class="faq-question">Metode pembayaran apa saja yang tersedia?<i class="fas fa-chevron-down"></i></div><div class="faq-answer">Pembayaran bisa dilakukan secara tunai (COD) kepada agent, transfer bank (BCA, Mandiri, BRI), atau via QRIS.</div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    q.classList.toggle('active');
+    q.nextElementSibling.classList.toggle('show');
+  });
+});
+</script>
+</body>
+</html>
