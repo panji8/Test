@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+<title>Daftar Agent - Suruhboy</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<style>
+.info-page { display: block; min-height: 100vh; background: #F5F6FA; }
+.info-container { max-width: 500px; margin: 0 auto; padding: 0 16px 40px; }
+.info-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-top: 12px; }
+.info-back-btn { width: 40px; height: 40px; border-radius: 12px; border: 1px solid #E2E6ED; display: flex; align-items: center; justify-content: center; background: #fff; cursor: pointer; text-decoration: none; }
+.info-content { background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.register-form .form-group { margin-bottom: 20px; }
+.register-form label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.register-form input, .register-form select, .register-form textarea { width: 100%; padding: 12px 14px; background: #F5F6FA; border: 1px solid #E2E8F0; border-radius: 12px; font-size: 14px; font-family: inherit; }
+.area-checkboxes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 8px; }
+.area-checkbox { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.area-checkbox input { width: auto; margin: 0; }
+.register-btn { width: 100%; padding: 14px; background: #25D366; border: none; border-radius: 16px; font-size: 16px; font-weight: 700; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="info-page">
+  <div class="info-container">
+    <div class="info-header">
+      <a href="../index.html" class="info-back-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </a>
+      <div>
+        <h2 style="font-size:18px; font-weight:700;">Daftar Agent</h2>
+        <p style="font-size:12px; color:#7A8BA0;">Gabung jadi partner Suruhboy</p>
+      </div>
+    </div>
+    <div class="info-content">
+      <h2>Form Pendaftaran Agent</h2>
+      <p>Isi data berikut untuk mendaftar menjadi agent Suruhboy. Tim kami akan menghubungi Anda dalam 1x24 jam.</p>
+      <form class="register-form" id="agentRegisterForm">
+        <div class="form-group"><label>Nama Lengkap *</label><input type="text" id="regNama" placeholder="Masukkan nama lengkap" required></div>
+        <div class="form-group"><label>Nomor WhatsApp *</label><input type="tel" id="regWhatsapp" placeholder="08123456789" required></div>
+        <div class="form-group"><label>Alamat Lengkap *</label><textarea id="regAlamat" rows="2" placeholder="Masukkan alamat lengkap" required></textarea></div>
+        <div class="form-group"><label>Kecamatan *</label><select id="regKecamatan" required><option value="">Pilih Kecamatan</option><option value="Ampel">Ampel</option><option value="Andong">Andong</option><option value="Banyudono">Banyudono</option><option value="Boyolali Kota">Boyolali Kota</option><option value="Cepogo">Cepogo</option><option value="Juwangi">Juwangi</option><option value="Karanggede">Karanggede</option><option value="Kemusu">Kemusu</option><option value="Klego">Klego</option><option value="Mojosongo">Mojosongo</option><option value="Musuk">Musuk</option><option value="Ngemplak">Ngemplak</option><option value="Nogosari">Nogosari</option><option value="Sambi">Sambi</option><option value="Sawit">Sawit</option><option value="Selo">Selo</option><option value="Simo">Simo</option><option value="Teras">Teras</option><option value="Wonosegoro">Wonosegoro</option></select></div>
+        <div class="form-group"><label>Area Operasional *</label><div class="area-checkboxes" id="areaCheckboxes"><label class="area-checkbox"><input type="checkbox" value="Ampel"> Ampel</label><label class="area-checkbox"><input type="checkbox" value="Andong"> Andong</label><label class="area-checkbox"><input type="checkbox" value="Banyudono"> Banyudono</label><label class="area-checkbox"><input type="checkbox" value="Boyolali Kota"> Boyolali Kota</label><label class="area-checkbox"><input type="checkbox" value="Cepogo"> Cepogo</label><label class="area-checkbox"><input type="checkbox" value="Juwangi"> Juwangi</label><label class="area-checkbox"><input type="checkbox" value="Karanggede"> Karanggede</label><label class="area-checkbox"><input type="checkbox" value="Kemusu"> Kemusu</label><label class="area-checkbox"><input type="checkbox" value="Klego"> Klego</label><label class="area-checkbox"><input type="checkbox" value="Mojosongo"> Mojosongo</label><label class="area-checkbox"><input type="checkbox" value="Musuk"> Musuk</label><label class="area-checkbox"><input type="checkbox" value="Ngemplak"> Ngemplak</label><label class="area-checkbox"><input type="checkbox" value="Nogosari"> Nogosari</label><label class="area-checkbox"><input type="checkbox" value="Sambi"> Sambi</label><label class="area-checkbox"><input type="checkbox" value="Sawit"> Sawit</label><label class="area-checkbox"><input type="checkbox" value="Selo"> Selo</label><label class="area-checkbox"><input type="checkbox" value="Simo"> Simo</label><label class="area-checkbox"><input type="checkbox" value="Teras"> Teras</label><label class="area-checkbox"><input type="checkbox" value="Wonosegoro"> Wonosegoro</label></div></div>
+        <div class="form-group"><label>Jenis Kendaraan</label><select id="regKendaraan"><option value="">Pilih Kendaraan</option><option value="Motor">Motor</option><option value="Mobil">Mobil</option><option value="Sepeda">Sepeda</option><option value="Jalan Kaki">Jalan Kaki</option></select></div>
+        <div class="form-group"><label>Pengalaman (opsional)</label><textarea id="regPengalaman" rows="2" placeholder="Ceritakan pengalaman Anda"></textarea></div>
+        <button type="button" class="register-btn" id="submitRegisterBtn"><i class="fab fa-whatsapp"></i> Daftar via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+const CONTACTS = { whatsapp: '62882007670299' };
+
+document.getElementById('submitRegisterBtn').addEventListener('click', () => {
+  const nama = document.getElementById('regNama')?.value.trim();
+  const wa = document.getElementById('regWhatsapp')?.value.trim();
+  const alamat = document.getElementById('regAlamat')?.value.trim();
+  const kecamatan = document.getElementById('regKecamatan')?.value;
+  const kendaraan = document.getElementById('regKendaraan')?.value;
+  const pengalaman = document.getElementById('regPengalaman')?.value.trim();
+  const selectedAreas = [];
+  document.querySelectorAll('#areaCheckboxes input:checked').forEach(cb => selectedAreas.push(cb.value));
+  if (!nama || !wa || !alamat || !kecamatan || selectedAreas.length === 0) { 
+    alert('Harap lengkapi semua data yang diperlukan'); 
+    return; 
+  }
+  const message = `📋 PENDAFTARAN AGENT SURUHBOY 📋\n\n👤 Nama: ${nama}\n📱 WhatsApp: ${wa}\n📍 Alamat: ${alamat}\n🏘️ Kecamatan: ${kecamatan}\n🗺️ Area Operasional: ${selectedAreas.join(', ')}\n🛵 Kendaraan: ${kendaraan || '-'}\n📝 Pengalaman: ${pengalaman || '-'}\n\n✅ Mohon verifikasi data pendaftaran ini.`;
+  window.open(`https://wa.me/${CONTACTS.whatsapp}?text=${encodeURIComponent(message)}`, '_blank');
+});
+</script>
+</body>
+</html>
